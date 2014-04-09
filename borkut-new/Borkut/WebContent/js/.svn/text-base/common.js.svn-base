@@ -1,0 +1,582 @@
+/*function for Select Checkboxes */
+
+function checkUncheckAll(theElement) {
+     var theForm = theElement.form, z = 0;
+	 for(z=0; z<theForm.length;z++){
+      if(theForm[z].type == 'checkbox' && theForm[z].name != 'checkall'){
+	  theForm[z].checked = theElement.checked;
+	  }
+     }
+    }
+	
+<!-- table sorting script-->
+<!-- Begin
+function setDataType(cValue)
+  {
+    // THIS FUNCTION CONVERTS DATES AND NUMBERS FOR PROPER ARRAY
+    // SORTING WHEN IN THE SORT FUNCTION
+    var isDate = new Date(cValue);
+    if (isDate == "NaN")
+      {
+        if (isNaN(cValue))
+          {
+            // THE VALUE IS A STRING, MAKE ALL CHARACTERS IN
+            // STRING UPPER CASE TO ASSURE PROPER A-Z SORT
+            cValue = cValue.toUpperCase();
+            return cValue;
+          }
+        else
+          {
+            // VALUE IS A NUMBER, TO PREVENT STRING SORTING OF A NUMBER
+            // ADD AN ADDITIONAL DIGIT THAT IS THE + TO THE LENGTH OF
+            // THE NUMBER WHEN IT IS A STRING
+            var myNum;
+            myNum = String.fromCharCode(48 + cValue.length) + cValue;
+            return myNum;
+          }
+        }
+  else
+      {
+        // VALUE TO SORT IS A DATE, REMOVE ALL OF THE PUNCTUATION AND
+        // AND RETURN THE STRING NUMBER
+        //BUG - STRING AND NOT NUMERICAL SORT .....
+        // ( 1 - 10 - 11 - 2 - 3 - 4 - 41 - 5  etc.)
+        var myDate = new String();
+        myDate = isDate.getFullYear() + " " ;
+        myDate = myDate + isDate.getMonth() + " ";
+        myDate = myDate + isDate.getDate(); + " ";
+        myDate = myDate + isDate.getHours(); + " ";
+        myDate = myDate + isDate.getMinutes(); + " ";
+        myDate = myDate + isDate.getSeconds();
+        //myDate = String.fromCharCode(48 + myDate.length) + myDate;
+        return myDate ;
+      }
+  }
+function sortTable(col, tableToSort)
+  {
+    var iCurCell = col + tableToSort.cols;
+    var totalRows = tableToSort.rows.length;
+    var bSort = 0;
+    var colArray = new Array();
+    var oldIndex = new Array();
+    var indexArray = new Array();
+    var bArray = new Array();
+    var newRow;
+    var newCell;
+    var i;
+    var c;
+    var j;
+    // ** POPULATE THE ARRAY colArray WITH CONTENTS OF THE COLUMN SELECTED
+    for (i=1; i < tableToSort.rows.length; i++)
+      {
+        colArray[i - 1] = setDataType(tableToSort.cells(iCurCell).innerText);
+        iCurCell = iCurCell + tableToSort.cols;
+      }
+    // ** COPY ARRAY FOR COMPARISON AFTER SORT
+    for (i=0; i < colArray.length; i++)
+      {
+        bArray[i] = colArray[i];
+      }
+    // ** SORT THE COLUMN ITEMS
+    //alert ( colArray );
+    colArray.sort();
+    //alert ( colArray );
+    for (i=0; i < colArray.length; i++)
+      { // LOOP THROUGH THE NEW SORTED ARRAY
+        indexArray[i] = (i+1);
+        for(j=0; j < bArray.length; j++)
+          { // LOOP THROUGH THE OLD ARRAY
+            if (colArray[i] == bArray[j])
+              {  // WHEN THE ITEM IN THE OLD AND NEW MATCH, PLACE THE
+                // CURRENT ROW NUMBER IN THE PROPER POSITION IN THE
+                // NEW ORDER ARRAY SO ROWS CAN BE MOVED ....
+                // MAKE SURE CURRENT ROW NUMBER IS NOT ALREADY IN THE
+                // NEW ORDER ARRAY
+                for (c=0; c<i; c++)
+                  {
+                    if ( oldIndex[c] == (j+1) )
+                    {
+                      bSort = 1;
+                    }
+                      }
+                      if (bSort == 0)
+                        {
+                          oldIndex[i] = (j+1);
+                        }
+                          bSort = 0;
+                        }
+          }
+    }
+	// ** SORTING COMPLETE, ADD NEW ROWS TO BASE OF TABLE ....
+  for (i=0; i<oldIndex.length; i++)
+    {
+      newRow = tableToSort.insertRow();
+      for (c=0; c<tableToSort.cols; c++)
+        {
+          newCell = newRow.insertCell();
+          newCell.innerHTML = tableToSort.rows(oldIndex[i]).cells(c).innerHTML;
+        }
+      }
+  //MOVE NEW ROWS TO TOP OF TABLE ....
+  for (i=1; i<totalRows; i++)
+    {
+      tableToSort.moveRow((tableToSort.rows.length -1),1);
+    }
+  //DELETE THE OLD ROWS FROM THE BOTTOM OF THE TABLE ....
+  for (i=1; i<totalRows; i++)
+    {
+      tableToSort.deleteRow();
+    }
+  }
+//  End -->
+
+
+/*Starts Popup*/
+function openWindow1(w,h,url,scrl){
+  winStats='width='+w+',height='+h+',toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars='+scrl
+   	var x=(screen.width-w)/2;
+   	var y =(screen.availHeight-h)/2;
+	y=y-15;
+     if (navigator.appName.indexOf("Microsoft")>=0) {
+      winStats+=',left='+x+',top='+y;	  
+	  //alert('IE');
+    }else{
+	  y=y-10;
+      winStats+=',screenX='+x+',screenY='+y;
+	  //alert('N');
+    }
+	//alert(name);
+	//alert(winStats);
+   window.open(url,'',winStats);
+}
+/*Ends Popup*/
+/*Starts Popup*/
+function openReport(w,h,url,scrl){
+  winStats='width='+w+',height='+h+',toolbar=yes,location=no,directories=no,status=yes,menubar=no,scrollbars='+scrl
+   	var x=(screen.width-w)/2;
+   	var y =(screen.availHeight-h)/2;
+	y=y-15;
+     if (navigator.appName.indexOf("Microsoft")>=0) {
+      winStats+=',left='+x+',top='+y;	  
+	  //alert('IE');
+    }else{
+	  y=y-10;
+      winStats+=',screenX='+x+',screenY='+y;
+	  //alert('N');
+    }
+	//alert(name);
+	//alert(winStats);
+   window.open(url,'',winStats);
+}
+/*Ends Popup*/
+// market basket view functions
+function showMarketView()
+{
+	
+     document.getElementById('DisplayNo').style.display='inline'
+}
+/*Function to implement select from/to dropdown for Assign TA popup*/
+var dataToSave="";
+function dropdown_moveRight()
+{
+	var x=document.getElementById('assignTA_src');
+	var z=document.getElementById('assignTA_dest');
+    var y=document.createElement('option');
+	
+  if(x.selectedIndex!=0){
+      y.text=x.options[x.selectedIndex].text;
+	 dataToSave=x.options[x.selectedIndex].text;
+	  try
+		{
+		 z.add(y,null); // standards compliant
+		 x.remove(x.selectedIndex);
+		}
+	  catch(ex)
+		{
+	     z.add(y); // IE only
+		 x.remove(x.selectedIndex);
+		}
+  }
+  else
+  alert("Select at least one option")
+	
+}
+var counter=0;
+function dropdown_moveLeft()
+{
+	
+	
+	var x=document.getElementById('assignTA_src');
+	var z=document.getElementById('assignTA_dest');
+    var y1=document.createElement('option');
+	dataToSave="";
+  counter=0;
+  for(i=0;i<z.options.length;i++)
+  {
+	 if(z.options[i].selected==false)
+	 	counter++;
+  }
+	if(counter==z.options.length)
+	return;
+      y1.text=z.options[z.selectedIndex].text;
+	 
+	  try
+		{
+		 x.add(y1,null); // standards compliant
+		 z.remove(z.selectedIndex);
+		}
+	  catch(ex)
+		{
+	     x.add(y1); // IE only
+		 z.remove(z.selectedIndex);
+		}
+  
+  
+	
+}
+/*Function to implement select from/to dropdown for Assign TA popup ends here*/
+
+var flag=12;
+function show(id)
+{
+//if(document.getElementById(id).style.display =='none')
+document.getElementById(id).style.visibility = 'visible';
+
+}
+function checkHiding()
+{
+if(flag!=12)
+	{
+		if(document.getElementById('sub_layer').style.visibility == 'hidden' &&document.getElementById('sub_layer1').style.visibility == 'hidden' &&document.getElementById('sub_layer2').style.visibility == 'hidden')
+			document.getElementById('Layer1').style.visibility = 'hidden';
+	}
+}
+function hide(id)
+{
+//if(document.getElementById(id).style.display =='none')
+document.getElementById(id).style.visibility = 'hidden';
+
+
+}
+function show_sub_layer(id,id2)
+{
+//if(document.getElementById(id).style.display =='none')
+document.getElementById(id).style.visibility = 'visible';
+document.getElementById(id2).style.visibility = 'visible';
+flag=99;
+
+}
+function hide_sub_layer(id)
+{
+//if(document.getElementById(id).style.display =='none')
+document.getElementById(id).style.visibility = 'hidden';
+
+
+}
+function checkPosition()
+{
+//alert(document.getElementById('lastLnk').clientWidth);
+//document.getElementById('SubMenuDiv').style.left=document.getElementById('lastLnk').clientWidth;
+}
+function confirmApproval()
+{
+	var x=window.confirm("You are going to approve the request please click on ok to confirm or cancel to stay on same page.")
+}
+function confirmDeny()
+{
+	var x=window.confirm("You are going to deny the request please click on ok to confirm or cancel to stay on same page.")
+}
+function ShowMessege()
+{
+	document.getElementById('updationMsg').style.display = 'inline';
+}
+function AskforAddSite()
+{
+	var x=window.confirm("Do you want to add one more site?")
+	if(x==false)
+		window.location.href="CM_Update_Site.html"
+		
+}
+function AskForAddingNewSite()
+{
+	var x=window.confirm("Do you want to add one more site?")
+	if(x==false)
+		window.location.href="CM_Update_Account.html"
+}
+
+
+/*Function for Tree Menu: starts here*/
+function showTree(treeId,catLen){
+		for(i=0;i<catLen;i++){
+			if(i == treeId){
+				
+				if(document.getElementById('tree'+treeId).style.display == "none"){
+				document.getElementById('tree'+treeId).style.display = "inline";
+				document.images['iconplus'+treeId].src = "../images//icon_minus.gif"
+				}else{
+				document.getElementById('tree'+treeId).style.display = "none";
+				document.images['iconplus'+treeId].src = "../images//icon_plus.gif"
+				}				
+			}
+			else{
+				document.getElementById('tree'+i).style.display = "none";
+				document.images['iconplus'+i].src = "../images//icon_plus.gif"
+			}
+		}
+	}
+	
+function showSubTree(treeId,catLen){
+	for(i=0;i<catLen;i++){
+			if(i == treeId){				
+				if(document.getElementById('SubTree'+treeId).style.display == "none"){
+				document.getElementById('SubTree'+treeId).style.display = "inline";
+				document.images['subiconplus'+treeId].src = "../images/icon_minus.gif"
+				}else{
+				document.getElementById('SubTree'+treeId).style.display = "none";
+				document.images['subiconplus'+treeId].src = "../images/icon_plus.gif"
+				}				
+			}
+			else{
+				document.getElementById('SubTree'+i).style.display = "none";
+				document.images['subiconplus'+i].src = "../images/icon_plus.gif"
+			}
+	}
+}
+/*Function for Tree Menu: ends here*/
+
+/*Function to load the page from tree navigation: starts here*/
+var page_request = false;
+
+function getval(filename) {
+//alert(filename)	
+
+	if (window.XMLHttpRequest){ // if Mozilla, Safari etc
+		page_request = new XMLHttpRequest()
+	}
+	else if (window.ActiveXObject){ // if IE
+	page_request = new ActiveXObject("Microsoft.XMLHTTP")
+	}	
+	page_request.onreadystatechange=processresponse;
+	page_request.open('GET',filename, true);
+	page_request.send(null);
+}
+
+
+function processresponse(){
+if(page_request.readyState == 4 && (page_request.status==200 || window.location.href.indexOf("http")==-1)){
+document.getElementById('container').innerHTML=page_request.responseText;
+}
+}
+/*Function to load the page from tree navigation: ends here*/
+/*Function for plus minus menu start*/
+var selection=null;
+var objStyle = null;
+var DynaStyle=false;
+function expand(node){
+
+	var good=false;
+	ul=document.getElementById("ul"+node);
+	img1=document.getElementById("img"+node+"1");
+	img =document.getElementById("img"+node);
+	if(good=(ul!=null && img1!=null && ul.className!=null && ul.innerHTML!=null )) 
+	{
+		
+		str1 =''+img1.src;
+		if(img !=null)
+			str = ''+img.src;
+		if(ul.className=="Shown"){
+			ul.className="Hidden";
+
+			img1.src=str1.substr(0,str1.length-9)+"plus.gif";
+
+			if(img !=null){
+				img.src = str.substr(0,str.length-8)+"close.gif";
+
+			}
+		//	if(a!=null) a.href="javascript:;";
+		}else if(ul.className=="Hidden"){
+			ul.className="Shown";
+
+			img1.src=str1.substr(0,str1.length-8)+"minus.gif";
+
+			if(img !=null){
+				img.src=str.substr(0,str.length-9)+"open.gif";
+			}
+		}
+		//if(a!=null && "object"==typeof(a) && window.length>0) a.target="fra"+node;
+	}
+	return true;
+}
+function setSel(node){
+	if(selection!=null) if(selection.className!=null)
+	 selection.className="";
+	if(node){
+	 if(node.className!=null){
+	  node.className="Current";
+	  selection=node;
+	 }
+	 if(node!=null && "object"==typeof(window.parent))
+	  if(window.parent.document.title!=null)
+	   window.parent.document.title="HTML Tree Control - "+node.innerText;
+	}
+	return;
+}
+function cancelLoad(d){
+	if(d!=null) if("object"==typeof(ul=d.parentElement)) {
+		ul.innerHTML="";
+		ul.className="hdn";
+	}
+}
+function loadNode(id, node, selID){
+	ul=document.getElementById("ul"+id);
+	done=false;
+	if(ul!=null && "object"==typeof(ul)  && node && "object"==typeof(node)) 
+	{
+		ul.innerHTML=node.innerHTML;
+		ul.className="Hidden";
+		expand(id);
+	}
+	if(selID){
+		a=document.getElementById("a"+selID);
+		setSel(a);
+	}else{
+		a=document.getElementById("a"+id);
+		if(selection==null)
+			setSel(a);
+		else if(selection.innerHTML==null || selection.innerHTML=='')
+			setSel(a);
+	}
+	return;
+}
+function initSel(id){
+	
+	a=document.getElementById("a"+id);
+	alert(a);
+	if("object"==typeof(a)){
+		setSel(a);
+		if(a.offsetTop!=null && document.body.clientHeight!=null)
+			window.scrollTo(0,a.offsetTop-(document.body.clientHeight/2));
+	}
+	return;
+}
+
+/*Function for plus minus menu end*/
+function CopyPostalAddToPhysicalAdd()
+{
+	
+if(document.getElementById("chk").checked==true)
+	{
+		if((document.getElementById("Add1").value=="") && (document.getElementById("Add2").value=="") && (document.getElementById("Suite").value=="") && (document.getElementById("City").value=="") && (document.getElementById("Zip").value==""))
+		{
+			alert('Please enter Physical Address.');
+			document.getElementById("Add1").focus();
+			return false;
+		}
+			
+		if(document.getElementById("Add1").value=="")
+			{
+				alert('Please enter Address1.');
+				document.getElementById("Add1").focus();
+				return false;
+			}
+		else if(document.getElementById("Add2").value=="")
+			{
+				alert('Please enter Address2.');
+				document.getElementById("Add2").focus();
+				return false;
+			}
+			else if(document.getElementById("Suite").value=="")
+			{
+				alert('Please enter Suite.');
+				document.getElementById("Suite").focus();
+				return false;
+			}
+			else if(document.getElementById("City").value=="")
+			{
+				
+				alert('Please enter City.');
+				document.getElementById("City").focus();
+				return false;
+			}
+			
+			else if(document.getElementById("Zip").value=="")
+			{
+				alert('Please enter Zip.');
+				document.getElementById("Zip").focus();
+				return false;
+			}
+			
+			else 
+			{
+				document.getElementById("PAdd1").value=document.getElementById("Add1").value;
+				document.getElementById("PAdd2").value=document.getElementById("Add2").value;
+				document.getElementById("PSuite").value=document.getElementById("Suite").value;
+				document.getElementById("PCity").value=document.getElementById("City").value;
+				document.getElementById("PZip").value=document.getElementById("Zip").value;
+				document.getElementById("PState").value=document.getElementById("State").value
+			}
+	}
+	else if(document.getElementById("chk").checked==false)
+		{
+			document.getElementById("PAdd1").value="";
+				document.getElementById("PAdd2").value="";
+				document.getElementById("PSuite").value="";
+				document.getElementById("PCity").value="";
+				document.getElementById("PZip").value="";
+				document.getElementById("PState").value=""
+		}
+}
+function showHiddenResult(Id)
+{
+	document.getElementById(Id).style.display='inline';
+}
+function showHiddenResultOfDDD(Id,limit)
+{
+	for(i=1;i<=limit;i++)
+	document.getElementById(Id+i).style.display='inline';
+	
+}
+function ShowResultOfSelection()
+{
+	
+	Id=document.getElementById('opt').selectedIndex;
+		if(Id==3)
+			{
+				document.getElementById('otherTable').style.display='none';
+				document.getElementById('buttons').style.display='inline';
+				document.getElementById('AccountGroupTbl').style.display='inline';
+			}
+		else
+			{
+				document.getElementById('AccountGroupTbl').style.display='none';
+				document.getElementById('otherTable').style.display='inline';
+				document.getElementById('buttons').style.display='inline';
+			}
+	
+}
+function AskForDeactivate()
+{
+	var x=window.confirm("Do you want to deactivate the account?")
+	if(x)
+		window.location.href='CM_Search_Customer.html';
+	
+}
+
+function updateOrderLoaded(){
+	if (null != updatePage && 
+		updatePage == 1){
+			var con = confirm ("Your changes will be lost if you move away from this page. Please click on the update order button in case you want to save the changes.")
+			if(con==true)
+			{
+			
+				updatePage=1;
+				return false;
+			}
+			else
+			{
+				updatePage=0;
+				return true;
+			}
+	} 
+	
+}

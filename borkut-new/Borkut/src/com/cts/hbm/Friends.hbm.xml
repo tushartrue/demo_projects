@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.cts.domain.Friends" 
+		table="W_FRND_JAI">
+		<id name="sn" column="XJAISN">
+			<generator class="native">
+				<param name="sequence">S_FRND_JAI</param>
+			</generator>
+		</id>
+		
+		
+		<many-to-one name="usernum" class="com.cts.domain.Users" >
+			<column name="XJAIUSERNUM" />
+		</many-to-one>
+			
+			
+			<many-to-one name="friendnum" class="com.cts.domain.Users" >
+			<column name="XJAIFRIENDNUM" />
+		</many-to-one>
+		
+		
+		
+		<property column="XJAIDELETEDFLAG" length="1" name="deletedflag"
+			type="java.lang.Integer" />
+	
+		
+	</class>
+
+</hibernate-mapping>

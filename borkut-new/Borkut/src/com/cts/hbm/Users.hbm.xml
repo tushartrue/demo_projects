@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.cts.domain.Users" 
+		table="W_USR_JAI">
+		<id name="usernum" column="XJAIUSERNUM">
+			<generator class="native">
+				<param name="sequence">S_USR_JAI</param>
+			</generator>
+		</id>
+		
+		
+		<property column="XJAIFIRSTNAME" length="20" name="firstname"
+			type="java.lang.String" />
+		<property column="XJAILASTNAME" length="20" name="lastname"
+			type="java.lang.String" />
+		<property column="XJAICITY" length="20" name="city"
+			type="java.lang.String" />
+		<property column="XJAIGENDER" length="1" name="gender"
+			type="java.lang.String" />
+		<property column="XJAIORGANISATION" length="40" name="organisation"
+			type="java.lang.String" />
+		<property column="XJAIIMAGE" length="4000" name="image"
+			type="java.lang.String" />
+		<property column="XJAICOUNTRY" length="20" name="country"
+			type="java.lang.String" />
+		<property column="XJAIDELETEDFLAG" length="1" name="deletedflag"
+			type="java.lang.Integer" />
+		<property column="XJAIPASSWORD" length="30" name="password"
+			type="java.lang.String" />	
+	
+		<property column="XJAIUSERNAME" length="20" name="username"
+			type="java.lang.String" />
+			
+		<property column="XJAIABOUTME" length="100" name="aboutme"
+			type="java.lang.String" />
+			
+		<set name="scrapbook"  table="W_SCR_JAI" lazy="false" inverse="true"
+			cascade="all">
+			<key>
+				<column name="XJAIUSERNUM" />
+			</key>
+			<one-to-many class="com.cts.domain.Scrapbook" />
+		</set>
+		
+		<set name="friends"  table="W_FRND_JAI" lazy="false" inverse="true"
+			cascade="all">
+			<key>
+				<column name="XJAIUSERNUM" />
+			</key>
+			<one-to-many class="com.cts.domain.Friends" />
+		</set>
+		
+		<set name="photos"  table="W_PHT_JAI" lazy="false" inverse="true"
+			cascade="all">
+			<key>
+				<column name="XJAIUSERNUM" />
+			</key>
+			<one-to-many class="com.cts.domain.Photos" />
+		</set>
+		
+		
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="803"
+   repos="http://subversion.merck.com/svn/MRL_PCIS_RR_MRLSOS"
+   url="http://subversion.merck.com/svn/MRL_PCIS_RR_MRLSOS/trunk/mrlsos%20%20V2/WebContent/WEB-INF/lib"
+   last-author="joshisan"
+   uuid="887d6ea3-4454-0410-8077-9a2121c46cfa"
+   committed-date="2008-11-15T16:44:48.435419Z"
+   kind="dir"
+   name=""
+   committed-rev="787"/>
+<entry
+   kind="dir"
+   name="META-INF"/>
+<entry
+   checksum="c34485f9bada35acf4a5d0cefcf61e3f"
+   last-author="malkar"
+   prop-time="2008-10-07T14:37:17.708950Z"
+   text-time="2008-10-07T14:41:35.929039Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="MerckLDAPAPI.jar"
+   committed-rev="208"/>
+<entry
+   checksum="4da7e5578e39d21322c2a921609c36b8"
+   last-author="malkar"
+   prop-time="2008-10-07T14:38:45.938052Z"
+   text-time="2008-10-07T14:41:36.038388Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="antlr-2.7.6rc1.jar"
+   committed-rev="208"/>
+<entry
+   checksum="9791e464c742d33bab27df60ddecab86"
+   last-author="malkar"
+   prop-time="2008-10-07T14:32:35.228982Z"
+   text-time="2008-10-07T14:41:35.694719Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="asm-attrs.jar"
+   committed-rev="208"/>
+<entry
+   checksum="8a687877eb19f83b8e62ac51d3499c35"
+   last-author="malkar"
+   prop-time="2008-10-07T14:33:30.684597Z"
+   text-time="2008-10-07T14:41:35.788447Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="asm.jar"
+   committed-rev="208"/>
+<entry
+   checksum="44bf3233343141bacf774f22d44b5d86"
+   last-author="malkar"
+   prop-time="2008-10-07T14:33:04.034659Z"
+   text-time="2008-10-07T14:41:35.741583Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="authenticate.jar"
+   committed-rev="208"/>
+<entry
+   checksum="ce1dce4a5f6865fb88d4c7c2728b78ed"
+   last-author="malkar"
+   prop-time="2008-10-07T14:33:28.466372Z"
+   text-time="2008-10-07T14:41:35.757204Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="cglib-2.1.3.jar"
+   committed-rev="208"/>
+<entry
+   checksum="bbe92aa7d1cb059e3e6963d893909944"
+   last-author="malkar"
+   prop-time="2008-10-07T14:40:58.687859Z"
+   text-time="2008-10-07T14:41:36.069630Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="classes12.jar"
+   committed-rev="208"/>
+<entry
+   checksum="0f18acf5fa857f9959675e14d901a7ce"
+   last-author="malkar"
+   prop-time="2008-10-07T14:41:15.871289Z"
+   text-time="2008-10-07T14:41:36.085252Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="commons-beanutils-1.7.jar"
+   committed-rev="208"/>
+<entry
+   checksum="9b47ae4871f91707617dda4ef1509b2c"
+   last-author="malkar"
+   prop-time="2008-10-07T14:36:43.810729Z"
+   text-time="2008-10-07T14:41:35.850932Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="commons-collections-2.1.1.jar"
+   committed-rev="208"/>
+<entry
+   checksum="aea8ada11f2a10515e59922492167c5f"
+   last-author="joshisan"
+   prop-time="2008-11-18T04:11:41.396000Z"
+   text-time="2008-11-15T16:44:48.435000Z"
+   committed-date="2008-11-15T16:44:48.435419Z"
+   kind="file"
+   name="commons-dbcp.jar"
+   committed-rev="787"/>
+<entry
+   checksum="547741aaaa60474d7f1b383319db9b85"
+   last-author="malkar"
+   prop-time="2008-10-07T14:37:15.490725Z"
+   text-time="2008-10-07T14:41:35.897796Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="commons-lang-2.2.jar"
+   committed-rev="208"/>
+<entry
+   checksum="8a507817b28077e0478add944c64586a"
+   last-author="malkar"
+   prop-time="2008-10-07T14:37:22.239127Z"
+   text-time="2008-10-07T14:41:35.975902Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="commons-logging-1.0.4.jar"
+   committed-rev="208"/>
+<entry
+   checksum="7a50372c12799fb9f1ece24be70443ed"
+   last-author="joshisan"
+   prop-time="2008-11-18T04:11:41.427000Z"
+   text-time="2008-11-15T16:44:48.435000Z"
+   committed-date="2008-11-15T16:44:48.435419Z"
+   kind="file"
+   name="commons-pool.jar"
+   committed-rev="787"/>
+<entry
+   checksum="ee6326544d95c0f271ad8b6bdcd20a22"
+   last-author="joshisan"
+   prop-time="2008-11-06T19:38:23.591000Z"
+   text-time="2008-11-06T17:29:34.610000Z"
+   committed-date="2008-11-06T17:29:34.610001Z"
+   name="cos.jar"
+   kind="file"
+   committed-rev="515"/>
+<entry
+   checksum="4d8f51d3fe3900efc6e395be48030d6d"
+   last-author="malkar"
+   prop-time="2008-10-07T14:33:03.487913Z"
+   text-time="2008-10-07T14:41:35.725962Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="dom4j-1.6.1.jar"
+   committed-rev="208"/>
+<entry
+   checksum="6705323fe7d7667ed55f439bd47b1bd0"
+   last-author="malkar"
+   prop-time="2008-10-07T14:36:31.360552Z"
+   text-time="2008-10-07T14:41:35.835311Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="hibernate3.jar"
+   committed-rev="208"/>
+<entry
+   checksum="7c665c3b6d2650215f965e93d96e06e5"
+   last-author="malkar"
+   prop-time="2008-10-07T14:41:35.632234Z"
+   text-time="2008-10-07T14:41:36.100873Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="jintegra.jar"
+   committed-rev="208"/>
+<entry
+   checksum="c6e3e528816227b97f6b21f709641f8f"
+   last-author="malkar"
+   prop-time="2008-10-07T14:32:36.556792Z"
+   text-time="2008-10-07T14:41:35.710340Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="jta.jar"
+   committed-rev="208"/>
+<entry
+   checksum="6a059028d0b7acfb04bccc7474535da2"
+   last-author="malkar"
+   prop-time="2008-10-07T14:38:48.640537Z"
+   text-time="2008-10-07T14:41:36.054009Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="ldapfilt.jar"
+   committed-rev="208"/>
+<entry
+   checksum="8723807d24d5749fc2e39532a980cdda"
+   last-author="malkar"
+   prop-time="2008-10-07T14:32:33.807443Z"
+   text-time="2008-10-07T14:41:35.663476Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="ldapjdk.jar"
+   committed-rev="208"/>
+<entry
+   checksum="123c33da9b6ef5d7cafb1b07d7d7bea0"
+   last-author="malkar"
+   prop-time="2008-10-07T14:33:36.558205Z"
+   text-time="2008-10-07T14:41:35.804068Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="ldapsp.jar"
+   committed-rev="208"/>
+<entry
+   checksum="1f441dc337a302406bc697ec1b57ac40"
+   last-author="malkar"
+   prop-time="2008-10-07T14:37:59.480306Z"
+   text-time="2008-10-07T14:41:36.007145Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="log4j-1.2.11.jar"
+   committed-rev="208"/>
+<entry
+   checksum="d3342ed269c7bbd304deb0a7f8443af3"
+   last-author="malkar"
+   prop-time="2008-10-07T14:32:35.541408Z"
+   text-time="2008-10-07T14:41:35.694719Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="lyrisoft.jar"
+   committed-rev="208"/>
+<entry
+   checksum="2920db5cca849b579964f5ffaa55b326"
+   last-author="malkar"
+   prop-time="2008-10-07T14:36:43.998184Z"
+   text-time="2008-10-07T14:41:35.866553Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="ren.jar"
+   committed-rev="208"/>
+</wc-entries>

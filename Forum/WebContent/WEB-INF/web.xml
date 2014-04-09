@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+ <display-name>Forum</display-name>
+ <servlet>
+  <description>Login to the system</description>
+  <display-name>loginservlet</display-name>
+  <servlet-name>loginservlet</servlet-name>
+  <servlet-class>com.merck.mrl.pcisrr.mrlsos.loginservlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>controller servlet</description>
+  <display-name>controller</display-name>
+  <servlet-name>controller</servlet-name>
+  <servlet-class>cts.controller.ControllerServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>newAccount</servlet-name>
+  <servlet-class>cts.servlet.NewAccountServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>loginservlet</servlet-name>
+  <url-pattern>/loginservlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>controller</servlet-name>
+  <url-pattern>*.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>newAccount</servlet-name>
+  <url-pattern>*.to</url-pattern>
+ </servlet-mapping>
+ <session-config>
+  <session-timeout>130</session-timeout>
+ </session-config>
+ <mime-mapping>
+  <extension>html</extension>
+  <mime-type>text/html</mime-type>
+ </mime-mapping>
+ <mime-mapping>
+  <extension>txt</extension>
+  <mime-type>text/plain</mime-type>
+ </mime-mapping>
+ <welcome-file-list>
+  <welcome-file>LoginPage.jsp</welcome-file>
+ </welcome-file-list>
+</web-app>

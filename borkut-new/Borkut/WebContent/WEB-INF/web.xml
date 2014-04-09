@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+ <display-name>Employee</display-name>
+ <filter>
+  <filter-name>ResponseOverrideFilter</filter-name>
+  <filter-class>org.displaytag.filter.ResponseOverrideFilter</filter-class>
+ </filter>
+ <filter-mapping>
+  <filter-name>ResponseOverrideFilter</filter-name>
+  <url-pattern>*.do</url-pattern>
+ </filter-mapping>
+ <filter-mapping>
+  <filter-name>ResponseOverrideFilter</filter-name>
+  <url-pattern>*.jsp</url-pattern>
+ </filter-mapping>
+ <servlet>
+  <description>controller servlet</description>
+  <display-name>controller</display-name>
+  <servlet-name>controller</servlet-name>
+  <servlet-class>com.cts.controller.ControllerServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>controller</servlet-name>
+  <url-pattern>*.do</url-pattern>
+ </servlet-mapping>
+ <session-config>
+  <session-timeout>30</session-timeout>
+ </session-config>
+ <mime-mapping>
+  <extension>html</extension>
+  <mime-type>text/html</mime-type>
+ </mime-mapping>
+ <mime-mapping>
+  <extension>txt</extension>
+  <mime-type>text/plain</mime-type>
+ </mime-mapping>
+ <welcome-file-list>
+  <welcome-file>borkutLogin.jsp</welcome-file>
+ </welcome-file-list>
+</web-app>

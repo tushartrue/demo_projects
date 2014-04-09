@@ -1,0 +1,167 @@
+.hrColor{
+	color:#008080	
+}
+.announcement{
+color:#FF0000;
+font-family:Arial, Helvetica, sans-serif;
+FONT-SIZE: 14px
+}
+.applicationHeader{
+	FONT-WEIGHT: bold; FONT-SIZE: 25px; VERTICAL-ALIGN: middle;color:#000000; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 20px;  TEXT-ALIGN: center; 
+}
+
+.userMenuHeader{
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; CURSOR: hand; COLOR: #0000CC; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 20px; BACKGROUND-COLOR: #CCCCCC; TEXT-ALIGN: center; 
+}
+
+.username{
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; VERTICAL-ALIGN: middle; CURSOR: hand; COLOR: #0000CC; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 20px; BACKGROUND-COLOR: #33FF99; TEXT-ALIGN: center; 
+}
+
+.borkutHeader{
+	FONT-WEIGHT: bolder ; border:thick;   FONT-SIZE: 25px; VERTICAL-ALIGN: middle; CURSOR: hand; COLOR: #CC3300; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 30px; BACKGROUND-COLOR: #FFCCFF; TEXT-ALIGN: center; 
+}
+
+.scrapBookData{
+	FONT-WEIGHT: bolder ; border:thick;   FONT-SIZE: 10px;  CURSOR: hand; COLOR: #CC3300; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 50px; BACKGROUND-COLOR:#FFFFFF ; TEXT-ALIGN: left; 
+}
+
+.myMenu{
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; CURSOR: hand; COLOR: #0000CC; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 20px; BACKGROUND-COLOR: #99CC66; TEXT-ALIGN: center; 
+}
+
+.readOnlyProfile{
+	FONT-WEIGHT: bold; FONT-SIZE: 11px;   COLOR: #000099; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 20px;  TEXT-ALIGN: left; 
+}
+
+
+.userSubMenu A{
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #008080
+}
+.menu {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; VERTICAL-ALIGN: middle; CURSOR: hand; color:#FF9900 FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 25px; TEXT-ALIGN: center; 
+}
+.text {
+	TEXT-ALIGN: left
+}
+.catalogHeader{
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; VERTICAL-ALIGN: middle; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 20px; BACKGROUND-COLOR: #008080; TEXT-ALIGN: center; 
+}
+.Bucket {
+	FONT-SIZE: 13px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: none; COLOR: #000000; LINE-HEIGHT: 1; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 27px; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.columnName {
+	FONT-SIZE: 11px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: none; COLOR: #000000; LINE-HEIGHT: 1; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 27px; TEXT-ALIGN: left; TEXT-DECORATION: none;font-weight:bold
+}
+
+
+.text {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px -11px; PADDING-TOP: 0px; TEXT-ALIGN: left;vertical-align:middle
+}
+.buttonPagin {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:bold;	
+	background-color: #a2948b;
+	color: #FFFFFF;
+	text-align: center;
+	height: 17px;
+	border: 1px solid #544941;
+	}
+	.gradiantMain {
+	BACKGROUND-IMAGE: url(images/gradiant.GIF); BACKGROUND-REPEAT: repeat-y; HEIGHT: 28px;
+	
+}
+.warning{
+	color:#FF0000;
+}
+.report{
+	background-color:#F7EFDE
+}
+.reportHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; VERTICAL-ALIGN: middle;COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 20px; BACKGROUND-COLOR:#666633; TEXT-ALIGN: center; 
+}
+
+
+TD {
+	FONT: 10px/1.4em Verdana, Arial, Helvetica, sans-serif; COLOR: #000
+}
+TH {
+	FONT: 10px/1.4em Verdana, Arial, Helvetica, sans-serif; COLOR: #000
+}
+
+A:link {
+	COLOR: #c30
+}
+A:active {
+	COLOR: #c30
+}
+A:visited {
+	COLOR: #c30
+}
+A:hover {
+	COLOR: #c30
+}
+A.MRLMenu:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 3px; COLOR:#663300; TEXT-DECORATION: none
+}
+A.MRLMenu:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 3px; COLOR: #663300; TEXT-DECORATION: none
+}
+A.MRLMenu:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 3px; COLOR: #663300; TEXT-DECORATION: none
+}
+A.MRLMenu:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 3px; COLOR: #663300; TEXT-DECORATION: none
+}
+
+A.CatalogLink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 3px; COLOR:#FFFFFF; TEXT-DECORATION: none
+}
+A.CatalogLink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 3px; COLOR:#FFFFFF ; TEXT-DECORATION: none
+}
+A.CatalogLink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 3px; COLOR: #FFFFFF; TEXT-DECORATION: none
+}
+A.CatalogLink:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 3px; COLOR: #FFFFFF; TEXT-DECORATION: none
+}
+
+.tableborder{
+BORDER-RIGHT:#666633 1px solid; BORDER-TOP: #666633 1px solid;BORDER-LEFT: #666633 1px solid; BORDER-BOTTOM: #666633 1px solid; vertical-align:top
+}
+.columnSeparater{
+font-weight:bold; text-align:center
+}
+.gradiant{
+	filter:progid:DXImageTransform.Microsoft.Gradient(endColorstr='#FF99CC', startColorstr='#FFFFFF', gradientType='0');
+}
+.catlogAlign { vertical-align:text-top}
+
+/*BEGIN style for SUCCESS messages*/
+.suc_lt { background:url(../images/org_curve_leftTop.gif) no-repeat left top;  position:relative }
+.suc_rt { background:url(../images/org_curve_rightTop.gif) no-repeat right top;}
+/*.suc_t { background:url(../images/org_h_topLine.GIF) repeat-x;}
+.suc_b { background:url(../images/org_h_bottomLine.gif) repeat-x;}*/
+.suc_tb { border-bottom: 1px solid #ff9900; border-top: 1px solid #ff9900; margin-left:5px; margin-right: 5px;}
+/*.suc_l { background:url(../images/org_v_leftLine.gif) repeat-y ;}
+.suc_r { background:url(../images/org_v_rightLine.gif) repeat-y ;}*/
+.suc_lr{ border-left: 1px solid #ff9900; border-right: 1px solid #ff9900; margin-top: 3px; margin-bottom:3px;  margin-right:-5px;  margin-left:-5px; padding:5px; }
+.suc_ld { background:url(../images/org_curve_leftBottom.gif) no-repeat left bottom;  }
+.suc_rd { background:url(../images/org_curve_rightBottom.gif) no-repeat right bottom;}
+.suc_con { background:url(../images/suc_icon1.gif) no-repeat left; font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FCAF17; line-height:18px; padding:5px 0px 5px 30px; }
+#success_com td {padding-bottom:10px;}
+/*END style for SUCCESS messages*/
+
+
+/*BEGIN style for ALERT messages*/
+.fail_lt { background:url(../images/red_curve_leftTop.gif) no-repeat left top;  position:relative }
+.fail_rt { background:url(../images/red_curve_rightTop.gif) no-repeat right top;}
+.fail_tb { border-bottom: 1px solid #ff0044; border-top: 1px solid #ff0044; margin-left:5px; margin-right:5px;}
+.fail_lr{ border-left:1px solid #ff0044; border-right:1px solid #ff0044; margin-right:-5px;  margin-left:-5px;  padding:5px; margin-top:3px; margin-bottom:3px;}
+.fail_ld { background:url(../images/red_curve_leftBottom.gif) no-repeat left bottom;  }
+.fail_rd { background:url(../images/red_curve_rightBottom.gif) no-repeat right bottom;}
+.fail_con { background:url(../images/alert_icon.gif) no-repeat left; font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #de0106; line-height:18px; padding:5px 0px 5px 30px; }
+#fail_com td {padding-bottom:10px;}
+/*END style for ALERT messages*/

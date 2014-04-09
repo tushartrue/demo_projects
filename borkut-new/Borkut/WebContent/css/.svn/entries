@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="208"
+   name=""
+   committed-date="2008-10-06T09:59:35.741907Z"
+   url="http://subversion.merck.com/svn/MRL_PCIS_RR_MRLSOS/trunk/mrlsos%20%20V2/WebContent/css"
+   last-author="malkar"
+   kind="dir"
+   uuid="887d6ea3-4454-0410-8077-9a2121c46cfa"
+   repos="http://subversion.merck.com/svn/MRL_PCIS_RR_MRLSOS"
+   revision="242"/>
+<entry
+   committed-rev="208"
+   name="merckstyle.css"
+   text-time="2008-10-07T14:42:02.750811Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   checksum="282aa892121f929255e4344db2ff44c2"
+   last-author="malkar"
+   kind="file"
+   prop-time="2008-10-07T14:42:02.719568Z"/>
+</wc-entries>

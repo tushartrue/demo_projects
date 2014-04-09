@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="cts.domain.Users" 
+		table="USERS">
+		<id name="usernum" column="USERNUM">
+			<generator class="native">
+			</generator>
+		</id>
+		
+		
+		<property column="USERNAME" length="15" name="username"
+			type="java.lang.String" />
+			
+		<property column="FIRSTNAME" length="20" name="firstname"
+			type="java.lang.String" />
+			
+		<property column="LASTNAME" length="20" name="lastname"
+			type="java.lang.String" />
+			
+		<property column="PASSWORD" length="15" name="password"
+			type="java.lang.String" />
+			
+		<property column="DELETEDFLAG" length="1" name="deletedflag"
+			type="java.lang.Integer" />
+			
+		
+		
+	</class>
+
+</hibernate-mapping>

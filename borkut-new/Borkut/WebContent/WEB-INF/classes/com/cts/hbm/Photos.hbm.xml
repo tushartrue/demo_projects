@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.cts.domain.Photos" 
+		table="W_PHT_JAI">
+		<id name="sn" column="XJAISN">
+			<generator class="native">
+				<param name="sequence">S_PHT_JAI</param>
+			</generator>
+		</id>
+		
+		
+		<many-to-one name="usernum" class="com.cts.domain.Users" >
+			<column name="XJAIUSERNUM" />
+		</many-to-one>
+		<property column="XJAIPHOTOS" length="4000" name="photos"
+			type="java.lang.String" />
+		<property column="XJAIDELETEDFLAG" length="1" name="deletedflag"
+			type="java.lang.Integer" />
+			
+			<property column="XJAILABEL" length="20" name="label"
+			type="java.lang.String" />
+		
+	
+
+	</class>
+
+</hibernate-mapping>

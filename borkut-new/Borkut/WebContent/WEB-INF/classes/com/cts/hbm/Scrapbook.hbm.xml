@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.cts.domain.Scrapbook" 
+		table="W_SCR_JAI">
+		<id name="sn" column="XJAISN">
+			<generator class="native">
+				<param name="sequence">S_SCR_JAI</param>
+			</generator>
+		</id>
+		
+		<property column="XJAISCRAPS" length="100" name="scraps"
+			type="java.lang.String" />
+		<property column="XJAIDELETEDFLAG" length="1" name="deletedflag"
+			type="java.lang.Integer" />
+			
+		
+		<many-to-one name="usernum" class="com.cts.domain.Users" >
+			<column name="XJAIUSERNUM" />
+		</many-to-one>
+	
+		
+		<many-to-one name="friend" class="com.cts.domain.Users" >
+			<column name="XJAIFRIEND" />
+		</many-to-one>
+	
+		<property column="XJAICREATEDDATE" length="100" name="createddate"
+			type="java.util.Date" />
+			
+	
+
+	</class>
+
+</hibernate-mapping>

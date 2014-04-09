@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="803"
+   repos="http://subversion.merck.com/svn/MRL_PCIS_RR_MRLSOS"
+   url="http://subversion.merck.com/svn/MRL_PCIS_RR_MRLSOS/trunk/mrlsos%20%20V2/WebContent/WEB-INF/lib/META-INF"
+   last-author="malkar"
+   uuid="887d6ea3-4454-0410-8077-9a2121c46cfa"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="dir"
+   name=""
+   committed-rev="208"/>
+<entry
+   checksum="aac0796a78927a12e2384beeb9ff7fd4"
+   last-author="malkar"
+   prop-time="2008-10-07T14:36:44.138776Z"
+   text-time="2008-10-07T14:36:44.170018Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   kind="file"
+   name="MANIFEST.MF"
+   committed-rev="208"/>
+</wc-entries>

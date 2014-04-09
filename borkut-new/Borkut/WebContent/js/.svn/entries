@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="209"
+   name=""
+   committed-date="2008-10-06T11:17:31.942815Z"
+   url="http://subversion.merck.com/svn/MRL_PCIS_RR_MRLSOS/trunk/mrlsos%20%20V2/WebContent/js"
+   last-author="malkar"
+   kind="dir"
+   uuid="887d6ea3-4454-0410-8077-9a2121c46cfa"
+   repos="http://subversion.merck.com/svn/MRL_PCIS_RR_MRLSOS"
+   revision="242"/>
+<entry
+   committed-rev="209"
+   name="common.js"
+   text-time="2008-10-07T14:42:03.391284Z"
+   committed-date="2008-10-06T11:17:31.942815Z"
+   checksum="64b81bab813bf69dba1311c2f67011df"
+   last-author="malkar"
+   kind="file"
+   prop-time="2008-10-07T14:42:02.891402Z"/>
+<entry
+   committed-rev="208"
+   name="popcalendar.js"
+   text-time="2008-10-07T14:42:03.406905Z"
+   committed-date="2008-10-06T09:59:35.741907Z"
+   checksum="b29744965d0f1fa3a3439c95cd75e59e"
+   last-author="malkar"
+   kind="file"
+   prop-time="2008-10-07T14:42:03.391284Z"/>
+</wc-entries>

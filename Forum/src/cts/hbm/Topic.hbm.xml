@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="cts.domain.Topic" 
+		table="TOPIC">
+		<id name="topic_id" column="TOPIC_ID">
+			<generator class="native">
+				
+			</generator>
+		</id>
+		
+		<property column="TOPIC_NAME" length="30" name="topic_name"
+			type="java.lang.String" />
+			
+		<property column="CATEGORY" length="10" name="category"
+			type="java.lang.String" />
+		
+		<property column="BODY" length="100" name="body"
+			type="java.lang.String" />
+			
+		<many-to-one name="user" class="cts.domain.Users" >
+			<column name="USERNUM" />
+		</many-to-one>
+		
+		<property column="STARTED_DATE"  name="started_date"
+			type="java.util.Date" />
+			
+		<property column="LAST_POSTED"  name="last_posted"
+			type="java.util.Date" />
+			
+		<property column="DELETEDFLAG" length="1" name="deletedflag"
+			type="java.lang.Integer" />
+			
+	
+		
+		<set name="replies"  table="TOPICREPLY" lazy="false" inverse="true"
+			cascade="all">
+			<key>
+				<column name="TOPIC_ID" />
+			</key>
+			<one-to-many class="cts.domain.TopicReply" />
+		</set>
+		
+	
+	</class>
+
+</hibernate-mapping>
